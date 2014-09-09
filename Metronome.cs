@@ -25,8 +25,7 @@ public class Metronome : MonoBehaviour {
 		if(!IsPowerOfTwo(noteValue))
 			noteValue = 4;
 
-		//set the tempo to act according to the not value
-		float scaling = (float)4 / (float)noteValue;
+		float scaling = 4.0f / (float)noteValue;
 
 		//set the fixedDeltaTime that plays our metronome in the FixedUpdate
 		interval = (60.0f * scaling) / (float)tempo;
